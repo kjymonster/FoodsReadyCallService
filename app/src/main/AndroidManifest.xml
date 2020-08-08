@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".fragments.subNumFragment02"></activity>
+        <activity android:name=".fragments.subNumFragment01" />
         <activity android:name=".PopupActivity">
-            </activity>
-
-        <activity android:name=".SetupActivity" />
-        <activity android:name=".MainActivity">
-              <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SetupActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
