@@ -9,6 +9,8 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -49,8 +51,9 @@
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
             android:text="고객님, 음식이 준비 되었습니다."
-            android:textColor="#000000"
-            android:textSize="60sp" />
+            android:textStyle="bold"
+            android:textColor="@color/colorBrown"
+            android:textSize="120sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -58,42 +61,52 @@
             android:layout_gravity="bottom"
             android:layout_marginLeft="10dp"
             android:text="Your food is ready."
-            android:textColor="#000000"
-            android:textSize="40sp" />
+            android:textColor="@color/colorBrown"
+            android:textStyle="bold"
+            android:textSize="80sp" />
 
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorGray">
+        android:background="@color/colorLightGray">
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
-            <TextView
-                android:id="@+id/mainNumTxt"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
                 android:layout_weight="4"
-                android:text="100"
-                android:gravity="center"
-                android:background="#000000"
-                android:textColor="#FFFFFF"
-                android:textSize="300sp" />
+                android:layout_margin="40dp"
+                android:background="@color/colorBrown">
+
+
+                <TextView
+                    android:id="@+id/mainNumTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="100"
+                    android:gravity="center"
+                    android:background="@color/colorBrown"
+                    android:textColor="#FFFFFF"
+                    android:textSize="300sp" />
+
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="45dp"
                 android:layout_weight="4"
                 android:orientation="vertical">
 
@@ -103,31 +116,42 @@
                     android:layout_marginTop="15dp"
                     android:layout_weight="3">
 
-                    <fragment
+                    <TextView
+                        android:id="@+id/subNumTxt01"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="3"
                         android:layout_marginRight="10dp"
-                        android:tag="subNum01"
-                        class="com.example.foodsreadycallservice.fragments.subNumFragment01" />
+                        android:layout_weight="3"
+                        android:text="test"
+                        android:textSize="100sp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:background="@color/colorWhite" />
 
 
-                    <fragment
+                    <TextView
+                        android:id="@+id/subNumTxt02"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="3"
                         android:layout_marginRight="10dp"
-                        android:tag="subNum02"
-                        class="com.example.foodsreadycallservice.fragments.subNumFragment02" />
+                        android:layout_weight="3"
+                        android:text="test"
+                        android:textSize="100sp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:background="@color/colorWhite" />
 
-
-                  <fragment
-                      android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:layout_weight="3"
-                      android:layout_marginRight="10dp"
-                      android:tag="subNum03"
-                      class="com.example.foodsreadycallservice.fragments.subNumFragment03" />
+                    <TextView
+                        android:id="@+id/subNumTxt03"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="3"
+                        android:text="test"
+                        android:textSize="100sp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:background="@color/colorWhite" />
 
 
                 </LinearLayout>
@@ -212,7 +236,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
                         android:layout_weight="3"
                         android:orientation="vertical">
 
@@ -253,6 +276,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="5"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <TextView
@@ -293,6 +317,12 @@
 
         </LinearLayout>
 
+        <fragment
+            android:layout_width="1500dp"
+            android:layout_height="800dp"
+            android:layout_gravity="center"
+            android:tag="popup"
+            class="com.example.foodsreadycallservice.fragments.PopupFragment" />
 
     </FrameLayout>
 
