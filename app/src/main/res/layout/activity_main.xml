@@ -31,6 +31,14 @@
             android:text="설정"
             android:textSize="50sp" />
 
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="호출"
+            android:textSize="50sp" />
+
     </FrameLayout>
 
     <LinearLayout
@@ -91,7 +99,7 @@
                     android:id="@+id/mainNumTxt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="100"
+                    android:text=""
                     android:gravity="center"
                     android:background="@color/colorBrown"
                     android:textColor="#FFFFFF"
@@ -317,12 +325,19 @@
 
         </LinearLayout>
 
-        <fragment
+        <TextView
+            android:id="@+id/popNumTxt"
             android:layout_width="1500dp"
-            android:layout_height="800dp"
+            android:layout_height="900dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
             android:layout_gravity="center"
-            android:tag="popup"
-            class="com.example.foodsreadycallservice.fragments.PopupFragment" />
+            android:visibility="invisible"
+            android:text="test"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:background="@color/colorWhite"  />
 
     </FrameLayout>
 

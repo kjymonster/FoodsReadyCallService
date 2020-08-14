@@ -1,68 +1,70 @@
 package com.example.foodsreadycallservice
 
-import android.content.Context
 import android.os.Bundle
-import android.view.LayoutInflater
+import android.os.Handler
 import android.view.View
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
 import android.view.animation.Animation.AnimationListener
-import android.widget.LinearLayout
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.getSystemService
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //        setupBtn()
 
-
-
-        //Popup액티비티에서 받아온 숫자를 mainNumTxt에 띄워줌.
-        val receivedNum = intent.getIntExtra("popupNum", -1)
-        mainNumTxt.text = "${receivedNum}"
-
         var anim: Animation
         var start = false
 
-        anim = AlphaAnimation(0.0f, 1.0f) //투명도. 0.0~1.0
-        anim.setDuration(1000)  //지속시간. (100) = 100 = 1초
-        //anim.setStartOffset(20) //한번 애니메이션이 시작하기위해 대기하는 시간
-        //anim.setRepeatMode(Animation.REVERSE) //반복
-        anim.setRepeatCount(4) //몇번 반복할지
+        var clickCount = 0
 
-        if (mainNumTxt != null) {
-//          val myIntent = Intent(this, subNumFragment01::class.java)
-//          myIntent.putExtra("main_num", changedMainNum)
-//          startActivity(myIntent)
 
-//          val fragment: Fragment = subNumFragment01() // Fragment 생성
-//          val bundle = Bundle() // 파라미터는 전달할 데이터 개수
-//          bundle.putInt("main_num", changedMainNum) // key , value
-//          fragment.setArguments(bundle)
+        callBtn.setOnClickListener {
 
-            if (!start) {
-                start = true;
-                mainNumTxt.startAnimation(anim)
-                mainNumTxt.visibility = View.INVISIBLE
+            popNumTxt.visibility = View.VISIBLE
 
-                anim.setAnimationListener(object : AnimationListener {
-                    override fun onAnimationRepeat(p0: Animation?) {}
+            clickCount = clickCount + 1
+            popNumTxt.text = "${clickCount}"
 
-                    override fun onAnimationEnd(animation: Animation) {
+            val callNumList: MutableList<Int> = mutableListOf(clickCount)
+            callNumList.add(clickCount)
+            popNumTxt.text = "${callNumList[0]}"
 
-                        subNumTxt04.text = "${receivedNum}"
-                    }
+           Handler().postDelayed({
+                   popNumTxt.visibility = View.GONE
+               }, 3000)
 
-                    override fun onAnimationStart(p0: Animation?) {}
-                })
-            } else {
-                start = false;
-                mainNumTxt.clearAnimation();
-            }
+            mainNumTxt.text = popNumTxt.text
+
+
+            anim = AlphaAnimation(0.0f, 1.0f) //투명도. 0.0~1.0
+            anim.setDuration(1000)  //지속시간. (100) = 100 = 1초
+            //anim.setStartOffset(20) //한번 애니메이션이 시작하기위해 대기하는 시간
+            //anim.setRepeatMode(Animation.REVERSE) //반복
+            anim.setRepeatCount(4) //몇번 반복할지
+
+            if (mainNumTxt != null) {
+                if (!start) {
+                    start = true;
+                    mainNumTxt.startAnimation(anim)
+                    mainNumTxt.visibility = View.INVISIBLE
+
+                    anim.setAnimationListener(object : AnimationListener {
+                        override fun onAnimationRepeat(p0: Animation?) {}
+
+                        override fun onAnimationEnd(animation: Animation) {
+
+                            subNumTxt01.text = mainNumTxt.text
+                        }
+
+                        override fun onAnimationStart(p0: Animation?) {}
+                    })
+                } else {
+                    start = false;
+                    mainNumTxt.clearAnimation();
+                }
 
 
 //            Handler().postDelayed(Runnable {
@@ -70,8 +72,18 @@ class MainActivity : AppCompatActivity() {
 //                subNumTxt04.text = "${receivedNum}"
 //            }, 5500) // 5.5초 정도 딜레이를 준 후 시작
 
-        }
+            }
 
+          }
+
+
+    }
+
+    override fun setupEvents() {
+
+    }
+
+    override fun setValues() {
 
     }
 
