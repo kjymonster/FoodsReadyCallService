@@ -101,6 +101,7 @@
                     android:layout_height="match_parent"
                     android:text=""
                     android:gravity="center"
+                    android:visibility="visible"
                     android:background="@color/colorBrown"
                     android:textColor="#FFFFFF"
                     android:textSize="300sp" />
@@ -334,9 +335,9 @@
             android:layout_gravity="center"
             android:visibility="invisible"
             android:text="test"
-            android:textSize="40sp"
+            android:textSize="600sp"
             android:gravity="center"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/colorOrange"
             android:background="@color/colorWhite"  />
 
     </FrameLayout>
