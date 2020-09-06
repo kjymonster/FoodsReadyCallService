@@ -33,11 +33,11 @@ class subNumFragment01 : Fragment() {
 //        val receivedNum = .intent.getIntExtra("main_num", -1)
 //        subNumTxt01.text = "${receivedNum}"
 
-        val bundle = this.arguments
-        if (bundle != null) {
-            val receivedNum= bundle.getInt("main_num", -1)
-            subNumTxt01.text = "${receivedNum}"
-        }
+//        val bundle = this.arguments
+//        if (bundle != null) {
+//            val receivedNum= bundle.getInt("main_num", -1)
+//            subNumTxt01.text = "${receivedNum}"
+//        }
 
 
     }
