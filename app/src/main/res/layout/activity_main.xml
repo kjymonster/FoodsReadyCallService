@@ -12,6 +12,7 @@
 
 
     <FrameLayout
+        android:layout_marginTop="200dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -61,17 +62,17 @@
             android:text="고객님, 음식이 준비 되었습니다."
             android:textStyle="bold"
             android:textColor="@color/colorBrown"
-            android:textSize="120sp" />
+            android:textSize="200sp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="889dp"
+            android:layout_height="194dp"
             android:layout_gravity="bottom"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="60dp"
             android:text="Your food is ready."
             android:textColor="@color/colorBrown"
-            android:textStyle="bold"
-            android:textSize="80sp" />
+            android:textSize="100sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -99,12 +100,13 @@
                     android:id="@+id/mainNumTxt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text=""
+                    android:text=" "
                     android:gravity="center"
+                    android:textStyle="bold"
                     android:visibility="visible"
                     android:background="@color/colorBrown"
                     android:textColor="#FFFFFF"
-                    android:textSize="300sp" />
+                    android:textSize="900sp" />
 
 
             </LinearLayout>
@@ -131,8 +133,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:layout_weight="3"
-                        android:text="test"
-                        android:textSize="100sp"
+                        android:text=" "
+                        android:textSize="300sp"
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite" />
@@ -144,8 +147,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:layout_weight="3"
-                        android:text="test"
-                        android:textSize="100sp"
+                        android:text=" "
+                        android:textSize="300sp"
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite" />
@@ -156,8 +160,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:layout_weight="3"
-                        android:text="test"
-                        android:textSize="100sp"
+                        android:text=" "
+                        android:textSize="300sp"
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite" />
@@ -174,35 +179,6 @@
                     android:layout_weight="3">
 
 
-<!--                    <fragment-->
-<!--                        class="com.example.foodsreadycallservice.fragments.subNumFragment01"-->
-<!--                        android:id="@+id/fragment01"-->
-<!--                        android:tag="01"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:layout_marginRight="10dp"-->
-<!--                        android:layout_weight="3"-->
-<!--                        android:gravity="center" />-->
-
-<!--                    <fragment-->
-<!--                        class="com.example.foodsreadycallservice.fragments.subNumFragment02"-->
-<!--                        android:id="@+id/fragment02"-->
-<!--                        android:tag="02"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:layout_marginRight="10dp"-->
-<!--                        android:layout_weight="3"-->
-<!--                        android:gravity="center"  />-->
-
-<!--                    <fragment-->
-<!--                        class="com.example.foodsreadycallservice.fragments.subNumFragment03"-->
-<!--                        android:id="@+id/fragment03"-->
-<!--                        android:tag="03"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:layout_marginRight="10dp"-->
-<!--                        android:layout_weight="3"-->
-<!--                        android:gravity="center" />-->
 
                     <TextView
                         android:id="@+id/subNumTxt04"
@@ -210,8 +186,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:layout_weight="3"
-                        android:text="test"
-                        android:textSize="100sp"
+                        android:text=" "
+                        android:textSize="300sp"
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite" />
@@ -222,8 +199,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:layout_weight="3"
-                        android:text="test"
-                        android:textSize="100sp"
+                        android:text=" "
+                        android:textSize="300sp"
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite" />
@@ -234,8 +212,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:layout_weight="3"
-                        android:text="test"
-                        android:textSize="100sp"
+                        android:text=" "
+                        android:textSize="300sp"
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite" />
@@ -255,8 +234,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:layout_weight="3"
-                        android:text="test"
-                        android:textSize="100sp"
+                        android:text=" "
+                        android:textSize="300sp"
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite"/>
@@ -267,8 +247,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:layout_weight="3"
-                        android:text="test"
-                        android:textSize="100sp"
+                        android:text=" "
+                        android:textSize="300sp"
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite"/>
@@ -292,8 +273,9 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="3"
-                                android:text="test"
-                                android:textSize="40sp"
+                                android:text=" "
+                                android:textSize="110sp"
+                                android:textStyle="bold"
                                 android:gravity="center"
                                 android:textColor="@color/colorBlack"
                                 android:background="@color/colorWhite" />
@@ -304,8 +286,9 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="3"
-                                android:text="test"
-                                android:textSize="40sp"
+                                android:text=" "
+                                android:textSize="110sp"
+                                android:textStyle="bold"
                                 android:gravity="center"
                                 android:textColor="@color/colorBlack"
                                 android:background="@color/colorWhite"  />
@@ -325,8 +308,9 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="3"
-                                android:text="test"
-                                android:textSize="40sp"
+                                android:text=" "
+                                android:textSize="110sp"
+                                android:textStyle="bold"
                                 android:gravity="center"
                                 android:textColor="@color/colorBlack"
                                 android:background="@color/colorWhite"  />
@@ -337,8 +321,9 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="3"
-                                android:text="test"
-                                android:textSize="40sp"
+                                android:text=" "
+                                android:textSize="110sp"
+                                android:textStyle="bold"
                                 android:gravity="center"
                                 android:textColor="@color/colorBlack"
                                 android:background="@color/colorWhite"  />
@@ -359,17 +344,17 @@
 
         <TextView
             android:id="@+id/popNumTxt"
-            android:layout_width="1500dp"
-            android:layout_height="900dp"
-            android:layout_marginRight="10dp"
+            android:layout_width="2300dp"
+            android:layout_height="1500dp"
+            android:layout_marginBottom="210dp"
             android:layout_weight="3"
             android:layout_gravity="center"
             android:visibility="invisible"
-            android:text="test"
-            android:textSize="600sp"
+            android:text="10"
+            android:textSize="1000sp"
             android:gravity="center"
             android:textColor="@color/colorOrange"
-            android:background="@color/colorWhite"  />
+            android:background="#EBFFFFFF"  />
 
     </FrameLayout>
 
